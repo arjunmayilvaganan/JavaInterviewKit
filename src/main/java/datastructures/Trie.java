@@ -1,9 +1,12 @@
 package datastructures;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Trie {
-    private TrieNode root;
+    private final TrieNode root;
     
     static class TrieNode {
         private final Map<Character, TrieNode> children;

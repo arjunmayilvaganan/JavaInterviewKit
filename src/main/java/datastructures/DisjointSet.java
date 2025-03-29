@@ -1,8 +1,8 @@
 package datastructures;
 
 public class DisjointSet {
-    private int[] parent;
-    private int[] rank;    // rank[i] represents the size of the set containing i
+    private final int[] parent;
+    private final int[] rank;    // rank[i] represents the size of the set containing i
     
     public DisjointSet(int n) {
         parent = new int[n];

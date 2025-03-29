@@ -7,6 +7,7 @@ public class ArrayExample {
         // Array creation
         int[] numbers = new int[5];  // Initialize with zeros
         String[] fruits = {"apple", "banana", "orange"};  // Initialize with values
+        System.out.println("Fruits: " + Arrays.toString(fruits));
 
         // Filling array
         Arrays.fill(numbers, 1);  // Fill with 1s
@@ -56,6 +57,7 @@ public class ArrayExample {
         // Preferred way to declare array size
         int length = 5;
         int[] safeArray = new int[length];  // Clear size declaration
+        System.out.println("Fruits: " + Arrays.toString(safeArray));
 
         // Safe way to initialize 2D array with different column lengths
         int[][] irregular = new int[3][];
