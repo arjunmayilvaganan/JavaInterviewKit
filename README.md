@@ -2,6 +2,8 @@
 
 A comprehensive collection of Java code samples, templates, and implementations for interview preparation. This project includes common patterns, data structures, algorithms, and cheatsheets used in coding interviews.
 
+![](cover.svg)
+
 ## Contents
 
 ### Common Patterns
