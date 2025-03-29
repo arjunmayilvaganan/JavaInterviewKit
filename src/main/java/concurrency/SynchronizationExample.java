@@ -1,3 +1,5 @@
+package concurrency;
+
 public class SynchronizationExample {
     private int counter = 0;
 

@@ -1,3 +1,5 @@
+package concurrency;
+
 public class ThreadExample {
     public static void main(String[] args) {
         // Create a thread using a lambda expression
