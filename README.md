@@ -1,6 +1,6 @@
 # JavaInterviewKit
 
-A comprehensive collection of Java code samples, templates, and implementations for interview preparation.
+A comprehensive collection of Java code samples, templates, and implementations for interview preparation. The project is a work in progress.
 
 ## Project Structure
 
