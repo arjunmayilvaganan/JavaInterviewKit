@@ -53,3 +53,4 @@ Feel free to contribute by:
 ## License
 
 MIT License - feel free to use and modify for your own preparation!
+Also, let me know if there's something here that has to be removed. Content from here are references from official documentation and the public domain.
