@@ -1,6 +1,8 @@
 package patterns.twopointers;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class TwoPointersPattern {
     /*
@@ -86,6 +88,23 @@ public class TwoPointersPattern {
         
         return result;
     }
+
+    // Example 4: Has Pair With Sum
+    public static boolean hasPairWithSum(int[] nums, int target) {
+        Arrays.sort(nums);
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int sum = nums[left] + nums[right];
+            if (sum == target) {
+                return true;
+            } else if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        return false;
+    }
     
     public static void main(String[] args) {
         // Test Two Sum II
@@ -102,5 +121,10 @@ public class TwoPointersPattern {
         int[] nums = {-1, 0, 1, 2, -1, -4};
         List<List<Integer>> threeSumResult = threeSum(nums);
         System.out.println("3Sum results: " + threeSumResult);
+
+        // Test Has Pair With Sum
+        int[] nums2 = {1, 4, 2, 3, 7};
+        System.out.println(hasPairWithSum(nums2, 6)); // true
+        System.out.println(hasPairWithSum(nums2, 10)); // false
     }
 }

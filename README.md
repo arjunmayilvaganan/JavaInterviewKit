@@ -8,15 +8,19 @@ A comprehensive collection of Java code samples, templates, and implementations 
 - Arrays: [Array Pattern](src/main/java/patterns/arrays/ArrayPattern.java)
 - Backtracking: [Backtracking Pattern](src/main/java/patterns/backtracking/BacktrackingPattern.java)
 - Binary Search: [Binary Search Pattern](src/main/java/patterns/binarysearch/BinarySearchPattern.java)
-- Dynamic Programming: [Dynamic Programming Pattern](src/main/java/patterns/dynamicprogramming/DynamicProgrammingPattern.java)
+- Dynamic Programming:
+  - [Dynamic Programming Pattern](src/main/java/patterns/dynamicprogramming/DynamicProgrammingPattern.java)
+  - [2D Array DP Pattern](src/main/java/patterns/dynamicprogramming/TwoDArrayDPPattern.java)
 - Fast & Slow Pointers: [Fast Slow Pointers Pattern](src/main/java/patterns/fastslowpointers/FastSlowPointersPattern.java)
 - Graph Traversal:
   - [Graph BFS Pattern](src/main/java/patterns/graphs/GraphBFSPattern.java)
   - [Graph DFS Pattern](src/main/java/patterns/graphs/GraphDFSPattern.java)
+  - [Topological Sort Pattern](src/main/java/patterns/graphs/TopologicalSortPattern.java)
 - Greedy: [Greedy Pattern](src/main/java/patterns/greedy/GreedyPattern.java)
 - Heap/Priority Queue: [Heap Pattern](src/main/java/patterns/heap/HeapPattern.java)
 - Intervals: [Intervals Pattern](src/main/java/patterns/intervals/IntervalsPattern.java)
 - Linked List: [Linked List Pattern](src/main/java/patterns/linkedlist/LinkedListPattern.java)
+- Prefix Sum: [Prefix Sum Pattern](src/main/java/patterns/prefixsum/PrefixSumPattern.java)
 - Sliding Window: [Sliding Window Pattern](src/main/java/patterns/slidingwindow/SlidingWindowPattern.java)
 - Stack: [Stack Pattern](src/main/java/patterns/stack/StackPattern.java)
 - Tree Traversal:
@@ -24,6 +28,7 @@ A comprehensive collection of Java code samples, templates, and implementations 
   - [Tree DFS Pattern](src/main/java/patterns/treedfs/TreeDFSPattern.java)
   - [Tree Pattern](src/main/java/patterns/trees/TreePattern.java)
 - Trie: [Trie Pattern](src/main/java/patterns/tries/TriePattern.java)
+- Two Pointers: [Two Pointers Pattern](src/main/java/patterns/twopointers/TwoPointersPattern.java)
 
 ### Data Structures
 - [Disjoint Set (Union Find)](src/main/java/datastructures/DisjointSet.java)
@@ -45,11 +50,6 @@ A comprehensive collection of Java code samples, templates, and implementations 
 - [Quick Sort](src/main/java/sorting/QuickSort.java)
 - [Radix Sort](src/main/java/sorting/RadixSort.java)
 - [Selection Sort](src/main/java/sorting/SelectionSort.java)
-
-### Algorithm Templates
-- [Binary Search](src/main/java/templates/BinarySearch.java)
-- [Tree Traversal BFS](src/main/java/templates/TreeTraversalBFS.java)
-- [Tree Traversal DFS](src/main/java/templates/TreeTraversalDFS.java)
 
 ### Quick Reference Cheatsheets
 - [Array Operations](src/main/java/cheatsheets/ArrayExample.java)
