@@ -1,6 +1,7 @@
 package datastructures;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class GraphOOP {
     private final Map<Vertex, List<Edge>> adjacencyMap;
@@ -95,7 +96,7 @@ public class GraphOOP {
     public List<Vertex> getNeighbors(Vertex source) {
         return getEdges(source).stream()
                 .map(edge -> edge.destination)
-                .toList();
+                .collect(Collectors.toList());
     }
     
     public static void main(String[] args) {

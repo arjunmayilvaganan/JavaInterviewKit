@@ -1,6 +1,7 @@
 package cheatsheets;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrayExample {
     public static void main(String[] args) {
@@ -50,7 +51,7 @@ public class ArrayExample {
 
         // Array as List
         String[] stringArray = {"one", "two", "three"};
-        var asList = Arrays.asList(stringArray);  // Fixed-size List view
+        List<String> asList = Arrays.asList(stringArray);  // Fixed-size List view
         System.out.println("As List: " + asList);
 
         // Common pitfall prevention: array initialization
