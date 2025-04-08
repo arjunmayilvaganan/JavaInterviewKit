@@ -12,12 +12,12 @@ public class BacktrackingPattern {
      */
     
     // Example 1: Subsets (LeetCode 78)
-    public static List<List<Integer>> subsets(int[] nums) {
+    public static List<List<Integer>> subsetsDFS(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         backtrack(result, new ArrayList<>(), nums, 0);
         return result;
     }
-    
+
     private static void backtrack(List<List<Integer>> result, List<Integer> tempList, int[] nums, int start) {
         result.add(new ArrayList<>(tempList));
         for (int i = start; i < nums.length; i++) {
@@ -25,6 +25,27 @@ public class BacktrackingPattern {
             backtrack(result, tempList, nums, i + 1);
             tempList.remove(tempList.size() - 1);
         }
+    }
+
+    public static List<List<Integer>> subsetsBFS(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        // Start with empty subset
+        result.add(new ArrayList<>());
+
+        for (int num : nums) {
+            int size = result.size();
+            for (int i = 0; i < size; i++) {
+                // Create a new subset by copying an existing one
+                List<Integer> newSubset = new ArrayList<>(result.get(i));
+                // Add current element to the new subset
+                newSubset.add(num);
+                // Add the new subset to result
+                result.add(newSubset);
+            }
+        }
+
+        return result;
     }
     
     // Example 2: Combination Sum (LeetCode 39)
@@ -128,7 +149,9 @@ public class BacktrackingPattern {
     public static void main(String[] args) {
         // Test Subsets
         int[] nums1 = {1, 2, 3};
-        System.out.println("Subsets: " + subsets(nums1));
+        System.out.println("SubsetsDFS: " + subsetsDFS(nums1));
+
+        System.out.println("SubsetsBFS: " + subsetsBFS(nums1));
         
         // Test Combination Sum
         int[] candidates = {2, 3, 6, 7};
